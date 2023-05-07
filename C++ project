@@ -1,0 +1,31 @@
+#include <iostream>
+#include <regex>
+using namespace std;
+
+ int main() {
+int temperature;
+string location;
+string email_id;
+cout<<"enter the temperature in celsius:";
+cin>>temperature;
+cout<<"enter the location:";
+cin>>location;
+cout<<"enter the email_id:";
+cin>>email_id;
+if (temperature <=0){
+cout<<"freezing cold! \n";
+}else if(temperature <=14){
+cout<<"It's a bit chilly outside\n";
+}else if(temperature <=24){
+cout<<"It's a comfortable temperature outside\ n";
+}else if(temperature <=40) {
+cout<<"It's quite warm outside\ n";
+}else if(temperature <=60){
+cout<<"It's hot outside:";
+}else if(temperature <=100){
+cout<<"It's too hot outside:";
+}else{
+cout<<"Invalid temperature input.\n";
+}
+return 0;
+}
